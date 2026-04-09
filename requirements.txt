@@ -17,6 +17,8 @@ librosa>=0.10.2
 soundfile>=0.12.1
 faster-whisper>=1.0.3
 transformers>=4.44.0
+torch>=2.0.0
+torchaudio>=2.0.0
 
 # Reporting
 reportlab>=4.2.0

@@ -7,7 +7,7 @@ class MCQAnswer(BaseModel):
 
 
 class MCQSubmitRequest(BaseModel):
-    user_id: str
+    user_id: str | None = None
     questionnaire_id: str = Field(default="screening_v1")
     answers: list[MCQAnswer]
 

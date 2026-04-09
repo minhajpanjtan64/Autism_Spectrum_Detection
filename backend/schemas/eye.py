@@ -2,7 +2,7 @@ from pydantic import BaseModel, Field
 
 
 class EyeAnalyzeRequest(BaseModel):
-    user_id: str
+    user_id: str | None = None
     session_id: str | None = None
     attention_seconds: float = Field(ge=0)
     gaze_stability: float = Field(ge=0, le=1)
